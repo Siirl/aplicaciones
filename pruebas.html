@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario WEB basico</h1>
+    <fieldset style="border: 1px solid #ccc; padding: 20px; margin: 20px;">
+        <legend>Información del usuario</legend>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <br><br>
+            
+            <label>Ciudad:</label>
+            <select name="ciudad">
+                <option value="seleccion">Selecciona ciudad...</option>
+                <option value="bogota">Bogota</option>
+                <option value="medallo">Medellin</option>
+                <option value="cali">Cali</option>
+                <option value="ciudadotro">Otro</option>
+            </select>
+            <br><br>
+            
+            <label>Aficiones:</label>
+            <br>
+            <input type="checkbox" name="aficion" value="deportes">Deportes<br>
+            <input type="checkbox" name="aficion" value="coches">Coches<br>
+            <input type="checkbox" name="aficion" value="musica">Musica<br>
+            <br>
+            
+            <label>Sexo:</label>
+            <br>
+            <input type="radio" name="sexo" value="masculino">Masculino<br>
+            <input type="radio" name="sexo" value="femenino">Femenino
+            <br><br>
+            
+            <button type="Enviar">Enviar Formulario</button>
+            <button type="Limpiar">Limpiar Formulario</button>
+        </form>
+    </fieldset>
+</body>
+</html>
