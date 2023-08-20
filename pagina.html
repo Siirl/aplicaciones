@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ultimo punto taller</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Encabezado */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        
+        .login-form {
+            margin: 180px auto 0;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Pie de página */
+        .footer {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Logo de la Página" class="logo">
+        <h1>Taller CSS</h1>
+    </div>
+
+    <div class="login-form">
+        <h2>Iniciar Sesión</h2>
+        <form action="procesar_inicio_sesion.php" method="post">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        &copy; 2023 Aplicaciones web. Todos los derechos reservados, excepto el logo.
+    </div>
+</body>
+</html>
